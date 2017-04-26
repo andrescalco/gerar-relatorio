@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>Gerar Relatorio Financeiro</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<style type="text/css">
+		#my-canvas {
+			width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="col-md-6">
+		<form>
+			<div class="col-md-6 col-sm-6 col-xs-7 form-group">
+				<div class="controls">
+					<input class="form-control" type="text" placeholder="Mês" id='mes'>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-5 form-group">
+				<div class="controls">
+					<input class="form-control" type="text" placeholder="Ano" id="ano">
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12 form-group">
+				<div class="controls">
+					<input class="form-control" type="text" placeholder="Alvo Mensal" id="alvo">
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+				<div class="controls">
+					<input class="form-control" type="text" placeholder="Entradas" id="entradas">
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+				<div class="controls">
+					<input class="form-control" type="text" placeholder="Saídas" id="saidas">
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12 form-group">
+				<div class="controls">
+					<input class="form-control" type="text" placeholder="Saldo do Mês" id="saldo">
+				</div>
+			</div>
+			<div class="col-md-12 form-group">
+				<a href="#" id="download">Download</a>
+			</div>
+		</form>
+	</div>
+
+	<div class="col-md-6">
+		<canvas id="my-canvas"></canvas>
+	</div>
+
+
+	<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
