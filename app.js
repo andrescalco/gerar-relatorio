@@ -111,7 +111,6 @@ function init() {
 	$('download').addEventListener('click', function() {
 	    var nome = `RELATORIO-FINANCEIRO-${obj.mes}-${obj.ano}.png`;
 	    this.href = canvas.toDataURL();
-	    this.download = nome.toLowerCase();
 	}, false);
 
 	$('mes').addEventListener('keyup', function() {
